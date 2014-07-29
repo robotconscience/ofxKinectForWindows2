@@ -109,5 +109,10 @@ namespace ofxKinectForWindows2 {
 		ofMesh Depth::getMesh(const PointCloudOptions & pointCloudOptions) {
 			return this->getMesh(pointCloudOptions.stitchFaces, pointCloudOptions.textureCoordinates);
 		}
+		
+		//----------
+		ICoordinateMapper * Depth::getCoordinateMapper(){
+			return coordinateMapper;
+		}
 	}
 }

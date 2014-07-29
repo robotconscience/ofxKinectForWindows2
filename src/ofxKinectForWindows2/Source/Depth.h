@@ -25,6 +25,9 @@ namespace ofxKinectForWindows2 {
 
 			ofMesh getMesh(bool stitchFaces, PointCloudOptions::TextureCoordinates textureCoordinates);
 			ofMesh getMesh(const PointCloudOptions & pointCloudOptions = PointCloudOptions());
+
+			ICoordinateMapper * getCoordinateMapper();
+
 		protected:
 			ICoordinateMapper * coordinateMapper;
 		};
